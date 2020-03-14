@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://www.vodafone.nl/",
+  "browser": {
+    "chromeWebSecurity": false
+  },
+  "viewport": {
+    "viewportHeight": 1366,
+    "viewportWidth": 768
+  }
+}
