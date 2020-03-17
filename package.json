@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node cypress_test_runner.js"
+    "cy:run": "cypress run",
+    "test:all": "node cypress_test_runner.js",
+    "test:happy": "node cypress_test_runner.js --spec 'cypress/integration/vf/happy_path.spec.js'"
   },
   "author": "",
   "license": "ISC",
