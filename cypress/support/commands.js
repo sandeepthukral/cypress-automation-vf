@@ -34,6 +34,8 @@ Cypress.Commands.add('setStateToWinkelwagenPage', () => {
     .visit('shop/mobiel/pakket/apple-iphone-11-64gb-yellow/red61-red/2-jaar/false')
     .contains('Volgende stap')
     .scrollIntoView()
+    // sad hack to make Firefox executions stable
+    .wait(1000)
     .click()
   cy.get('body').then((body) => {
     // if the popup asking for new or extension, select new subscription
