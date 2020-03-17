@@ -3,8 +3,20 @@
   "browser": {
     "chromeWebSecurity": false
   },
-  "viewport": {
-    "viewportHeight": 1366,
-    "viewportWidth": 768
-  }
+  "blacklistHosts": ["ir-ing-district.clicktale.net", "684dd30d.akstat.io",
+                    "9539518.fls.doubleclick.net", "secure.4tele.com",
+                    "lo.v.liveperson.net", "ir-conductor.clicktale.net", "logx.optimizely.com"],
+  "viewportHeight": 768,
+  "viewportWidth": 1366,
+  "defaultCommandTimeout": 20000,
+  "watchForFileChanges": false,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "mochawesome-report",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
+  "video": false,
+  "screenshotsFolder": "mochawesome-report/assets"
 }

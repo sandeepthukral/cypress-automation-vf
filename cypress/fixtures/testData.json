@@ -1,0 +1,89 @@
+{
+  "product": {
+    "url": "",
+    "name": "Apple iPhone 11 64GB Yellow",
+    "monthly": {
+      "totalWithoutZiggoThuis": "€ 58,00",
+      "totalWithZiggoThuis": "€ 53,00",
+      "costSubscription": "€ 31,00",
+      "costPhoneSubscription": "€ 29,00",
+      "discount": "- € 2,00",
+      "discountZiggoThuis": "- € 5,00"
+    },
+    "oneoff": {
+      "total": "€ 78,69",
+      "oneoffDevice": "€ 48,00",
+      "thuisKopieHeffing": "€ 5,69",
+      "aansluitkosten": "€ 25,00"
+    },
+    "loanAmountsNormal": {
+      "totalToestelkost": "€ 744,00",
+      "eenmaligeBetaling": "€ 48,00",
+      "kreditBedrag": "€ 696,00",
+      "termijnBedrag": "€ 29,00",
+      "duurOvereenkomst": "24 maanden"
+    },
+    "loanAmountsAllOneff": {
+      "totalToestelkost": "€ 744,00",
+      "eenmaligeBetaling": "€ 744,00",
+      "kreditBedrag": "€ 0,00",
+      "termijnBedrag": "€ 0,00",
+      "duurOvereenkomst": "24 maanden"
+    }
+  },
+  "user": {
+    "postcode": "1321RC",
+    "huisnummer": "131",
+    "straat": "J.J. Slauerhoffstraat",
+    "plaats": "ALMERE",
+    "postcodeDelivery": "1321KC",
+    "huisnummerDelivery": "26",
+    "straatDelivery": "Louis Paul Boonstraat",
+    "plaatsDelivery": "ALMERE",
+    "email": "errorlogsblog@gmail.com",
+    "voorletters": "E.L.B",
+    "achternaam": "Blog",
+    "dob": "01-01-1978",
+    "dobDay": "01",
+    "dobMonth": "01",
+    "dobYear": "1978",
+    "telefoonnummer": "0699999999",
+
+    "idCardNumber": "ABC123456",
+    "idCardExpiryDate": "01-01-2022",
+    "idCardExpiryDateDay": "01",
+    "idCardExpiryDateMonth": "01",
+    "idCardExpiryDateYear": "2022",
+    "iban": "NL33ABNA1302357468",
+    "ibanDigits": "33",
+    "ibanCode": "ABNA",
+    "ibanNumber": "1302357468",
+
+    "overzichtNaam": "Dhr. E.L.B. Blog",
+    "overzichtAdresBilling": "J.J. Slauerhoffstraat 131, 1321 RC ALMERE, Nederland",
+    "overzichtAdresDelivery": "Louis Paul Boonstraat 26, 1321 KC ALMERE, Nederland",
+
+
+    "cookies-accept": "[data-click-cat='cookies']",
+    "ziggo-thuis-nee": "[data-testid='ziggo-customer-popup-button-no']",
+    "ziggo-thuis-benefits": "[data-testid='vf-product-benefits']",
+    "verlengen": "[data-testid='vf-product-receipt--retention-cta']",
+    "nieuweAbonnement": "a#cucumber-selector-postpaid-device",
+    "verlengen-clicked": "should take you to https://www.vodafone.nl/account/inloggen",
+
+    "zakelijk": {
+      "kvkNummer": "62393944",
+      "bedrijfNaam": "ZIGGO SERVICES B.V."
+    }
+  },
+  "loadDetails": {
+    "validInput": {
+      "housingCostsValue": "600",
+      "incomeValue": "3000"
+    },
+    "invalidInput": {
+      "housingCostsValue": "1000",
+      "incomeValue": "1000"
+    }
+  }
+}
