@@ -5,7 +5,6 @@ describe('the shortest happy path', function() {
   beforeEach(function() {
     cy.clearLocalStorage()
     cy.disableCookieBar()
-    cy.disableCookieBar()
     cy.fixture('testData').then((testData) => {
       this.testData = testData
     })

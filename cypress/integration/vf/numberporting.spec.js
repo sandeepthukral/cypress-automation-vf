@@ -3,8 +3,8 @@
 describe('', function() {
 
   beforeEach(function() {
+    cy.clearCookies()
     cy.clearLocalStorage()
-    cy.disableCookieBar()
     cy.disableCookieBar()
     cy.fixture('testData').then((testData) => {
       this.details = testData.user
