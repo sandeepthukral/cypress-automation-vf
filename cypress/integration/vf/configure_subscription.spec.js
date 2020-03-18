@@ -12,42 +12,42 @@ describe('iPhone product page configuration', () => {
     cy.visit(URL)
   })
 
-  // it('should display all prices correctly', function () {
-  //   cy
-  //     .get('.product-receipt__monthly .product-receipt__header h2')
-  //     .should('have.text', this.product.monthly.totalWithoutZiggoThuis)
-  //   cy
-  //     .get('[data-testid="vf-product-receipt--subscription-price"]')
-  //     .should('have.text', this.product.monthly.costSubscription)
-  //   cy
-  //     .get('[data-testid="vf-product-receipt--price-recurring--device-title"] span')
-  //     .should('have.text', this.product.monthly.costPhoneSubscription)
-  //   cy
-  //     .get('[data-testid="vf-product-receipt--invoice-discount"] span')
-  //     .should('have.text', this.product.monthly.discount)
-  //   cy
-  //     .get('.product-receipt__onetime .product-receipt__header h2')
-  //     .should('have.text', this.product.oneoff.total)
-  //   cy
-  //     .get('[data-testid="vf-product-receipt--price-once--device-title"] span')
-  //     .should('have.text', this.product.oneoff.oneoffDevice)
+  it('should display all prices correctly', function () {
+    cy
+      .get('.product-receipt__monthly .product-receipt__header h2')
+      .should('have.text', this.product.monthly.totalWithoutZiggoThuis)
+    cy
+      .get('[data-testid="vf-product-receipt--subscription-price"]')
+      .should('have.text', this.product.monthly.costSubscription)
+    cy
+      .get('[data-testid="vf-product-receipt--price-recurring--device-title"] span')
+      .should('have.text', this.product.monthly.costPhoneSubscription)
+    cy
+      .get('[data-testid="vf-product-receipt--invoice-discount"] span')
+      .should('have.text', this.product.monthly.discount)
+    cy
+      .get('.product-receipt__onetime .product-receipt__header h2')
+      .should('have.text', this.product.oneoff.total)
+    cy
+      .get('[data-testid="vf-product-receipt--price-once--device-title"] span')
+      .should('have.text', this.product.oneoff.oneoffDevice)
 
-  //   cy
-  //     .get("vf-product-credit-table div:nth-child(1) > div.cel.row.ng-binding")
-  //     .should("have.text", this.product.loanAmountsNormal.totalToestelkost)
-  //   cy
-  //     .get("vf-product-credit-table div:nth-child(2) > div.cel.row.ng-binding")
-  //     .should("have.text", this.product.loanAmountsNormal.eenmaligeBetaling)
-  //   cy
-  //     .get("vf-product-credit-table div:nth-child(3) > div.cel.row.ng-binding")
-  //     .should("have.text", this.product.loanAmountsNormal.kreditBedrag)
-  //   cy
-  //     .get("vf-product-credit-table div:nth-child(4) > div.cel.row.ng-binding")
-  //     .should("have.text", this.product.loanAmountsNormal.termijnBedrag)
-  //   cy
-  //     .get("vf-product-credit-table div:nth-child(5) > div.cel.row.ng-binding")
-  //     .should("have.text", this.product.loanAmountsNormal.duurOvereenkomst)
-  // })
+    cy
+      .get("vf-product-credit-table div:nth-child(1) > div.cel.row.ng-binding")
+      .should("have.text", this.product.loanAmountsNormal.totalToestelkost)
+    cy
+      .get("vf-product-credit-table div:nth-child(2) > div.cel.row.ng-binding")
+      .should("have.text", this.product.loanAmountsNormal.eenmaligeBetaling)
+    cy
+      .get("vf-product-credit-table div:nth-child(3) > div.cel.row.ng-binding")
+      .should("have.text", this.product.loanAmountsNormal.kreditBedrag)
+    cy
+      .get("vf-product-credit-table div:nth-child(4) > div.cel.row.ng-binding")
+      .should("have.text", this.product.loanAmountsNormal.termijnBedrag)
+    cy
+      .get("vf-product-credit-table div:nth-child(5) > div.cel.row.ng-binding")
+      .should("have.text", this.product.loanAmountsNormal.duurOvereenkomst)
+  })
 
   it('should get extra discount on selecting ziggo thuis', function() {
     // toggle the Ziggo Thuis toggle
@@ -67,6 +67,8 @@ describe('iPhone product page configuration', () => {
     // cy.visit(url)
 
     // select to pay off telephone in one off cost
+    // hack to let the selector be enabled
+    cy.wait(1000)
     cy.get('input[type=range]')
       .invoke('val', 27)
       .trigger('change')
