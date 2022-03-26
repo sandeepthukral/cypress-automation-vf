@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.1.0",
-    "minimist": ">=1.2.2",
+    "minimist": ">=1.2.6",
     "mochawesome": "5.0.0",
     "mocha": "7.1.0",
     "mochawesome-merge": "4.0.3",
